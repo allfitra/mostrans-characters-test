@@ -15,9 +15,7 @@ const GET_CHARACTERS = gql`
         name
         image
         species
-        location {
-          name
-        }
+        gender
       }
     }
   }
@@ -98,11 +96,8 @@ const CardList = ({ dataList }) => {
             <img className="w-34 rounded-md" src={char.image} alt={char.name} />
           </div>
           <div className="mt-3">
-            <p
-              className="text-gray-400 text-[12px] truncate"
-              title={char.location?.name}
-            >
-              {char.location?.name || "Unknown"}
+            <p className={`text-[12px] ${getGenderColorClass(char.gender)}`}>
+              {char.gender || "Unknown"}
             </p>
             <div className="font-semibold text-[14px] text-gray-800 line-clamp-2 leading-snug min-h-[40px]">
               {char.name}
@@ -144,4 +139,10 @@ const SkeletonGrid = () => {
       ))}
     </div>
   );
+};
+
+const getGenderColorClass = (gender) => {
+  if (gender === "Male") return "text-blue-700";
+  if (gender === "Female") return "text-pink-700";
+  return "text-gray-700";
 };

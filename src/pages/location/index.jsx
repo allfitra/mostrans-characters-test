@@ -65,7 +65,7 @@ const CharactersByLocation = () => {
               </div>
             ) : (
               <p className="text-gray-500 text-center text-sm">
-                Klik salah satu lokasi untuk melihat karakter.
+                Pilih lokasi untuk melihat karakter terkait.
               </p>
             )}
           </>

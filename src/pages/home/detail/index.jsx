@@ -153,7 +153,7 @@ const CharacterDetail = () => {
                         <div className="flex w-full items-center bg-white/70 backdrop-blur border border-gray-200 rounded-xl shadow-sm overflow-hidden focus-within:ring-1 focus-within:ring-blue-500 transition">
                           <input
                             type="text"
-                            placeholder="Enter location name..."
+                            placeholder="Input Location..."
                             value={locationName}
                             onChange={(e) => setLocationName(e.target.value)}
                             className="p-2 text-sm w-full text-gray-700 placeholder-gray-400 bg-transparent outline-none"
