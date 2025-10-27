@@ -15,7 +15,7 @@ export const MainLayout = ({ title, children }) => {
 
         <main
           className={`flex-1 w-full px-2 sm:px-6 lg:px-8 mx-auto ${
-            !isHome ? "pt-28" : ""
+            !isHome ? "pt-22" : ""
           }`}
         >
           {children}

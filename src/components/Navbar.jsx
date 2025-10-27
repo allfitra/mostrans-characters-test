@@ -45,7 +45,7 @@ const WebNavbar = ({ navigation, location }) => {
   return (
     <nav
       className={classNames(
-        "fixed top-0 z-50 hidden h-[85px] w-full transition duration-200 md:block",
+        "fixed top-0 z-50 hidden h-[80px] w-full transition duration-200 md:block",
         scrolled || !isHome ? "bg-[#01663f] shadow-md" : "bg-transparent"
       )}
     >
