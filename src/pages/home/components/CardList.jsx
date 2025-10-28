@@ -11,7 +11,14 @@ const CardList = ({ dataList }) => {
           className="max-w-[180px] rounded-xl shadow-lg cursor-pointer bg-white hover:shadow-2xl transition-shadow duration-300 px-6 py-4"
         >
           <div className="flex justify-center items-center">
-            <img className="w-34 rounded-md" src={char.image} alt={char.name} />
+            <img
+              className="w-34 rounded-md"
+              width="300"
+              height="300"
+              style={{ aspectRatio: "1 / 1", height: "auto" }}
+              src={char.image}
+              alt={char.name}
+            />
           </div>
           <div className="mt-3">
             <p className={`text-[12px] ${getGenderColorClass(char.gender)}`}>

@@ -56,6 +56,7 @@ const WebNavbar = ({ navigation, location }) => {
               className="h-[80px] w-[100px]"
               src={LogoMostrans}
               alt="Mostrans Logo"
+              style={{ aspectRatio: "1 / 1", height: "80px", width: "80px" }}
             />
           </Link>
 
