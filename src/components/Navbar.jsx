@@ -53,10 +53,8 @@ const WebNavbar = ({ navigation, location }) => {
         <div className="flex h-20 w-full max-w-7xl items-center justify-around px-10 text-white">
           <Link to="/">
             <img
-              className="h-[40px] w-[60px]"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXLb3TY72rHh4VSJUR8UGa83p3ABg3FRBNrw&s"
-              // className="h-[80px] w-[100px]"
-              // src={LogoMostrans}
+              className="h-[80px] w-[100px]"
+              src={LogoMostrans}
               alt="Mostrans Logo"
             />
           </Link>
